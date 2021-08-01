@@ -1,5 +1,5 @@
 @import "../../global.scss";
-.works{
+.portfolio{
     background-color: crimson;
     display: flex;
     align-items: center;
@@ -17,18 +17,20 @@
             left: 100px;
             transform: rotateY(180deg);
 
-            @include mobile{
-                left: 0px
+            @include mobile{ 
+                left: 0px;
+                
             }
         }
 
         &.right{
             right: 100px;
             @include mobile{
-                right : 0px
+                
+                right: 0px
             }
         }
-    }
+    } 
 
 
     .slider{

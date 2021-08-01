@@ -1,6 +1,6 @@
 import React from 'react'
 import './topbar.scss'
-import PersonIcon from '@material-ui/icons/Person';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import MailIcon from '@material-ui/icons/Mail';
 export default function Topbar({menuOpen, setMenuOpen}) {
     return (
@@ -9,8 +9,8 @@ export default function Topbar({menuOpen, setMenuOpen}) {
                 <div className="left">
                     <a href="#intro" className="logo" >relentless.</a>
                     <div className="itemContainer">
-                        <PersonIcon className="icon" />
-                        <span>+2409590595</span>
+                        <LinkedInIcon className="icon" />
+                        <span><a href="https://www.linkedin.com/in/manoel-fangmo/">Linkedin</a></span>
                     </div>
                     <div className="itemContainer">
                         <MailIcon className="icon" />

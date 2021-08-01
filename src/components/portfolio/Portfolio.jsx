@@ -1,23 +1,25 @@
 import React from 'react'
 import './portfolio.scss'
 import { useState } from 'react';
+import comingSoon from "../../assets/comingSoon.jpg"
+import arrow from "../../assets/arrow2.png"
 
 
 export default function Portfolio() {
     const [currentSlide, setCurrentSlide] = useState(0);
     const data = [
         {
-            img: "assets/comingSoon.jpg",
+            img: comingSoon,
             title: "Personal Training Website",
             skills: ["Javascript","HTML","SCSS","React"],
         },
         {
-            img: "assets/comingSoon.jpg",
+            img: comingSoon,
             title: "Mobile Application",
             skills: ["Javascript","HTML","SCSS","React"],
         },
         {
-            img: "assets/comingSoon.jpg",
+            img: comingSoon,
             title: "Scheduler Application",
             skills: ["Javascript","HTML","SCSS","React"],
         },
@@ -29,7 +31,7 @@ export default function Portfolio() {
     }
 
     return (
-        <div className="works" id="works">
+        <div className="portfolio" id="portfolio">
 
 
             <div className="slider" style={{transform:`translateX(-${currentSlide*100}vw)`}}>
@@ -54,8 +56,8 @@ export default function Portfolio() {
                     </div> ))
                 }
             </div>
-            <img src="assets/arrow.png" alt="" className="arrow left" onClick={()=>handleClick("left")}/>
-            <img src="assets/arrow.png" alt="" className="arrow right" onClick={()=>handleClick()} />
+            <img src={arrow} alt="" className="arrow left" onClick={()=>handleClick("left")}/>
+            <img src={arrow} alt="" className="arrow right" onClick={()=>handleClick()} />
             
         </div> 
     )

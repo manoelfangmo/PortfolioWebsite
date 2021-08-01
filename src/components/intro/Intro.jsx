@@ -1,8 +1,11 @@
 import React from 'react'
 import "./intro.scss"
-import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
 import { init } from 'ityped'
 import { useEffect, useRef } from 'react';
+import ParticleBackground from '../particles/ParticleBackground';
+
+
+
 
 export default function Intro() {
     const textRef = useRef();
@@ -14,22 +17,13 @@ export default function Intro() {
     },[])
     return (
         <div className="intro" id="intro" >
-            <div className="left">
-                <div className="imageContainer">
-                    <img src="assets/man.jpg" alt=""/>
+                <div className="background">
+                <ParticleBackground /> 
                 </div>
-            </div>
-            <div className="right">
-
                 <div className="wrapper">
-                    <h2>Hi There, I'm</h2>
                     <h1>Manoel Fangmo</h1>
-                    <h3>Freelance <span ref={textRef}></span></h3>
+                    <h2><span ref={textRef}></span></h2>
                 </div>
-                <a href="#portfolio">
-                    <KeyboardArrowDownIcon className="icon" fontSize="large" /> 
-                </a>
-            </div>
         </div>
     )
 }
