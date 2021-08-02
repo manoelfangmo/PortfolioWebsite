@@ -21,7 +21,7 @@ export default function AboutMe() {
                         through being a self thought devloper, walking students through math problems, and helping clients reach their
                         fitness goals. I am alo a very curious indivdual who enjoys acquiring knowledge and discussing topics especially 
                         in the fields of computer science, fitness and philosophy.</p>
-                        <button href={resume} download >Resume</button>
+                        <a href={resume} download ><button>Resume</button></a>
                     </div>
                 </div>
             </div>

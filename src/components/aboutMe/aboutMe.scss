@@ -37,16 +37,21 @@
                     font-weight: bold;
                 }
             }
-            button{
-                margin: 20px;
-                background-color: crimson;
-                color: white;
-                border: none;
-                border-radius: 10px;
-                font-size: 20px;
-                padding: 10px 20px;
+            a{
+                button{
+                    margin: 20px;
+                    background-color: crimson;
+                    color: white;
+                    border: none;
+                    border-radius: 10px;
+                    font-size: 20px;
+                    padding: 10px 20px;
+                    cursor: pointer;
+    
+                }
 
             }
+
            
            
 
