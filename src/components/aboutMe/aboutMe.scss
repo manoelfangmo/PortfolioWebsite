@@ -1,61 +1,61 @@
 @import "../../global.scss";
 
-.aboutMe{
-    background-color: $mainColor;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.aboutMe {
+  background-color: $mainColor;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-    img{
-        border-radius: 50%;
-        max-width: 100%;
-        height: auto;
-    }
-    
+  img {
+    margin-top: 10px;
+    border-radius: 50%;
+    max-width: 100%;
+    height: auto;
+  }
 
-    .items{
-        
-        position: relative;
-       position: block;
-       width: 80%;
-        height: 100%;
-        
-        .wrapper{
-            
-            margin-top: 20px;
-            align-items: center;
-            justify-content: center;
-            display: flex;
-            text-align: left;
-            flex-direction: column;
-            
-            p{
-                color: white;
-                span{
-                    font-size: 40px;
-                    color: crimson;
-                    font-weight: bold;
-                }
-            }
-            a{
-                button{
-                    margin: 20px;
-                    background-color: crimson;
-                    color: white;
-                    border: none;
-                    border-radius: 10px;
-                    font-size: 20px;
-                    padding: 10px 20px;
-                    cursor: pointer;
-    
-                }
+  .items {
+    position: relative;
+    position: block;
+    width: 80%;
+    height: 100%;
+    overflow: hidden;
 
-            }
+    .wrapper {
+      margin-top: 10px;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      text-align: left;
+      flex-direction: column;
 
-           
-           
-
+      p {
+        color: white;
+        span {
+          font-size: 40px;
+          color: crimson;
+          font-weight: bold;
         }
-
+      }
+      blockquote {
+        margin-top: 10px;
+        font-style: italic;
+        text-align: center;
+        font-weight: bold;
+        font-size: 20px;
+        width: 100%;
+      }
+      a {
+        button {
+          margin: 20px;
+          background-color: crimson;
+          color: white;
+          border: none;
+          border-radius: 10px;
+          font-size: 20px;
+          padding: 10px 20px;
+          cursor: pointer;
+        }
+      }
     }
+  }
 }
